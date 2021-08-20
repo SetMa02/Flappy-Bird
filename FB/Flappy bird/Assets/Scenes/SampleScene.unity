@@ -161,7 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bird: {fileID: 959308974}
-  _xOffSet: 1
+  _xOffSet: -1.5
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -232,6 +232,7 @@ GameObject:
   - component: {fileID: 959308973}
   - component: {fileID: 959308970}
   - component: {fileID: 959308974}
+  - component: {fileID: 959308975}
   m_Layer: 0
   m_Name: bird1
   m_TagString: Untagged
@@ -251,7 +252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d50c364e6a3bfe0499c92b86cf9dd205, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startPosition: {x: -1.5, y: 0, z: 0}
+  _startPosition: {x: 0, y: 0, z: 0}
   _speed: 3
   _tapForce: 300
   _rotationSpeed: 1
@@ -315,7 +316,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 959308969}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.811, y: 0.811, z: 0.811}
   m_Children: []
   m_Father: {fileID: 0}
@@ -354,3 +355,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04917b79577d7814390658b31efa105a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &959308975
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959308969}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 13ea355b185e13a46921f32072843bc6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
