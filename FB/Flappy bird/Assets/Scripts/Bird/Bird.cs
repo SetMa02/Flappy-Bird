@@ -25,4 +25,9 @@ public class Bird : MonoBehaviour
         Debug.Log("Dead");
         Time.timeScale = 0;
     }
+
+    public void increaseScore()
+    {
+        _score++;
+    }
 }
